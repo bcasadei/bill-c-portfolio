@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Bill Casadei - Web Development, Branding, Design</title>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'> -->
-    <script src="//use.typekit.net/oom6sao.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header>
@@ -16,18 +16,37 @@
         <img class="bc-logo" src="images/BC-Logo.png" alt="Bill Casadei logo">
         <h1>Bill<span class="last-name">Casadei</span></h1>
     </div>
-    <div class="title-header"></div>
-</header>
-<nav></nav>
-<section class="main-content"></section>
-<footer>
-    <div class="social-links">
-        <ul>
-            <li class="twitter"></li>
-            <li class="linkedin"></li>
-        </ul>
+    <div class="title-header">
+        <div class="content">
+        <h2>Web Development | Branding | Design</h2>
+        </div>
     </div>
-    <p class="copyright"></p>
+</header>
+<nav class="content main-nav">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<section class="content main">
+    <h3>Featured Projects</h3>
+    <ul class="projects">
+        <li><img class="portfolio-thumb" src="images/sample-project.jpg" alt="sample project"></li>
+        <li><img class="portfolio-thumb" src="images/sample-project.jpg" alt="sample project"></li>
+        <li><img class="portfolio-thumb" src="images/sample-project.jpg" alt="sample project"></li>
+    </ul>
+</section>
+<footer class="social">
+    <div class="content">
+        <h5 class="social-message">Connect with me on</h5>
+        <ul>
+            <li class="twitter"><i class="fa fa-twitter fa-2x"></i></li>
+            <li class="linkedin"><i class="fa fa-linkedin fa-2x"></i></li>
+        </ul>
+        <p class="copyright">&copy; 2015 Bill Casadei</p>
+    </div>
 </footer>
 </body>
 </html>
