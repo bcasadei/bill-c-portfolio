@@ -1,0 +1,56 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+body {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: #fff;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: "tablet-gothic-wide",sans-serif;;
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+}
+/* Layout and Design Styles */
+.top-rule {
+    background-color: #a3a3a3;
+    background-image: url("../images/top-rule-background.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 0.7rem;
+}
+.content {
+    max-width: 960px;
+    padding: 0.7rem;
+    margin: 0 auto;
+}
+.branding > .bc-logo {
+    width: 91px;
+    height 106px;
+}
+.title-header {
+    background-color: #a3a3a3;
+    background-image: url("../images/header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 8rem;
+}
+/* Font Styling */
+.branding > h1 {
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #a3a3a3;
+    float: right;
+    line-height: 50%;
+}
+.branding .last-name {
+    font-weight: 600;
+}
