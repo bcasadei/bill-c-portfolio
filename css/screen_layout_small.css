@@ -20,20 +20,20 @@
 .title-header > .content > h2 {
     display: none;
 }
-nav.content.main-nav {
+.content.main-nav {
     margin-top: 0.25rem;
     margin-bottom: 0;
 }
-nav.main-nav > ul > li {
+.main-nav > ul > li {
     width: 100%;
     padding: 0 1.5rem 0 1.5rem;
     margin: 0.5rem 0 0.5rem 0;
 }
-section.main {
+.main {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
-section.main > h3 {
+.main > h3 {
     letter-spacing: .2rem;
     margin: 1rem 0 1rem 0;
 }

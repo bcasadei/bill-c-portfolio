@@ -23,6 +23,8 @@ body {
     display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: -webkit-flex;     /* NEW - Chrome */
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     /*End Flexbox */
     min-height: 100vh;
@@ -61,15 +63,15 @@ p {
     -moz-box-shadow:    0 4px 4px rgba(0, 0, 0, 0.4);  /* Firefox 3.5 - 3.6 */
     box-shadow:         0 4px 4px rgba(0, 0, 0, 0.4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
-nav.content.main-nav {
+.content.main-nav {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
-nav.content.main-nav > ul {
+.content.main-nav > ul {
     text-align: center;
     list-style: none;
 }
-nav.main-nav > ul > li {
+.main-nav > ul > li {
     display: inline-block;
     border: 1px solid #a3a3a3;
     height: 2rem;
@@ -80,28 +82,28 @@ nav.main-nav > ul > li {
     -moz-box-shadow:    0 2px 3px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
     box-shadow:         0 2px 3px rgba(0, 0, 0, 0.2);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
-nav.main-nav > ul > li:hover {
+.main-nav > ul > li:hover {
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    0 3px 5px rgba(0, 0, 0, 0.25);  /* Firefox 3.5 - 3.6 */
     box-shadow:         0 3px 5px rgba(0, 0, 0, 0.25);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
-nav.main-nav > ul > li:active {
+.main-nav > ul > li:active {
     -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    0 0 0 rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
     box-shadow:         0 0 0 rgba(0, 0, 0, 0.2);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
-footer.social {
+.social {
     width: 100%;
     background-color: #636468;
     bottom: 0;
     height: 192px;
     margin-top: 4rem;
 }
-footer.social > .content > ul {
+.social > .content > ul {
     text-align: center;
     background-color: transparent;
 }
-footer.social > .content > ul > li {
+.social > .content > ul > li {
     display: inline-block;
     width: 3rem;
     height: 3rem;
@@ -140,7 +142,7 @@ li.linkedin {
     line-height: 8.4rem;
     letter-spacing: .1rem;
 }
-nav.main-nav > ul > li > a {
+.main-nav > ul > li > a {
     font-size: 1rem;
     color: #636468;
     text-transform: uppercase;
@@ -149,10 +151,7 @@ nav.main-nav > ul > li > a {
     text-decoration: none;
     letter-spacing: 0.08rem;
 }
-section.main {
-    flex: 1;
-}
-section.main > h3 {
+.main > h3 {
     font-size: 2rem;
     font-weight: 300;
     text-align: center;
@@ -161,22 +160,22 @@ section.main > h3 {
     color: #a3a3a3;
     margin: 1rem 0 2.5rem 0;
 }
-section.main > h3.about {
+.main > h3.about {
     text-align: left;
     margin: 1rem 0 .75rem 0;
 }
-section.main > .projects {
+.main > .projects {
     list-style: none;
     text-align: center;
 }
-section.main > .projects > li {
+.main > .projects > li {
     display: inline-block;
     padding: 0;
     margin: .3rem;
     font-size: 0.9rem;
     color: #636468;
 }
-section.main > .projects img {
+.main > .projects img {
     max-width: 297px;
     max-height: 233px;
     border-radius: .7rem;
@@ -198,4 +197,11 @@ section.main > .projects img {
     font-weight: 300;
     letter-spacing: 0.1rem;
 }
+/* Flexbox Children - Parent is body tag*/
+.social {
+    margin-top: auto;
+}
+
+
+
 
