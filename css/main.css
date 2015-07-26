@@ -97,7 +97,6 @@ p {
     background-color: #636468;
     bottom: 0;
     height: 192px;
-    margin-top: 4rem;
 }
 .social > .content > ul {
     text-align: center;
@@ -113,11 +112,10 @@ p {
     background-color: #fff;
     padding: 0.5rem;
 }
-
-li.twitter {
+li.twitter > a {
     color: #55acee;
 }
-li.linkedin {
+li.linkedin > a {
     color: #007bb6;
 }
 /* Font Styling */
@@ -161,8 +159,11 @@ li.linkedin {
     margin: 1rem 0 2.5rem 0;
 }
 .main > h3.about {
-    text-align: left;
     margin: 1rem 0 .75rem 0;
+}
+.main > p.about {
+    text-align: center;
+    max-width: 500px;
 }
 .main > .projects {
     list-style: none;
@@ -174,12 +175,24 @@ li.linkedin {
     margin: .3rem;
     font-size: 0.9rem;
     color: #636468;
-}
-.main > .projects img {
-    max-width: 297px;
-    max-height: 233px;
+    width: 297px;
+    height: 233px;
     border-radius: .7rem;
     border: 1px solid #a3a3a3;
+    overflow: hidden;
+}
+.main > .projects img {
+    width: 100%;
+    vertical-align: middle;
+}
+.main {
+    margin-bottom: 2rem;
+}
+.main > .portrait {
+    max-width: 100%;
+    border-radius: 0.7rem;
+    display: block;
+    margin: 0 auto;
 }
 .social > .content > .social-message,
 .copyright {
@@ -201,6 +214,87 @@ li.linkedin {
 .social {
     margin-top: auto;
 }
+
+/* Contact Form Styles */
+.field {
+    margin: 1em 0;
+    width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    color: #636468;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em 0.5em;
+    font-size: 1.2em;
+    border-radius: 3px;
+    border: 1px solid #D9D9D9;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 0.5em 0.5em;
+    font-size: 1.2em;
+    border-radius: 3px;
+    border: 1px solid #D9D9D9;
+}
+
+button {
+    display: inline-block;
+    border-radius: 3px;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8em;
+    background: #636468;
+    border-bottom: 1px solid #282828;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover, button:focus {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 1;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.success {
+    padding: 1em;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #636468;
+    background-color: #ffffff;
+    border: 1px solid #a3a3a3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.error {
+    padding: 1em;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #b94a48;
+    background-color: #ffffff;
+    border: 1px solid rgba(185, 74, 72, 0.3);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
 
 
 
