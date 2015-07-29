@@ -209,3 +209,11 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+.lb-caption > a {
+  color: #82b6ff;
+  text-decoration: none;
+}
+.lb-caption > a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
